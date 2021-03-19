@@ -1,0 +1,12 @@
+package com.learning.learnwebflux.model
+
+import org.springframework.data.annotation.Id
+import org.springframework.data.mongodb.core.mapping.Document
+
+@Document("employees")
+data class Employee (
+        @Id
+        val id:String?,
+        val empName:String?,
+        val dept:String?
+        )
